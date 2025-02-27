@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Love Website | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+	<!-- Modernizr -->
+	<script src="static/js/modernizr.js"></script>
+	<!-- Open Sans from Google Webfonts -->
+	<link href='static/css/css.css' rel='stylesheet' type='text/css'>
+	<!-- Main styles file -->
+	<link rel="stylesheet" href="static/css/styles.css">
+	<!-- Icons via Font Awesome -->
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+	<title>Love Website | Aoudumber Bade</title>
+</head>
+
+<body class="color-scheme-neue">
+	<!-- Animated background -->
+	<canvas id="bg-canvas"></canvas>
+	<div class="bg-img"
+		style="width: 100%; height: 100%; position: fixed; background: url(https://cdn.jsdelivr.net/gh/MasterKeee/picture/love.jpg) no-repeat center center; background-size: cover; ">
+	</div>
+	<!-- First screen -->
+	<div class="splash">
+		<div class="centered-unit">
+			<div class="container">
+				<!-- Main header -->
+				<h1>For us！</h1>
+				<!-- Sub header -->
+				<p class="lead">We have been together for:</p>
+
+				<!-- Countdown -->
+				<div class="countdown circled large">
+					<!-- Days -->
+					<div class="time days">
+						<div class="value">00</div>
+						<div class="unit">Days</div>
+					</div>
+					<!-- Hours -->
+					<div class="time hours">
+						<div class="value">00</div>
+						<div class="unit">Hours</div>
+					</div>
+					<!-- Minutes -->
+					<div class="time minutes">
+						<div class="value">00</div>
+						<div class="unit">Minutes</div>
+					</div>
+					<!-- Seconds -->
+					<div class="time seconds">
+						<div class="value">00</div>
+						<div class="unit">Seconds</div>
+					</div>
+				</div>
+				<!-- Countdown end -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Second screen -->
+	<div class="overlap">
+
+		<!-- Link "Scroll down to learn more" -->
+		<a href="" class="more">Scroll Down <i class="fa fa-chevron-down"></i> More</a>
+
+		<!-- Detailed info -->
+		<div class="container few-words">
+			<div class="row">
+				<!-- First column -->
+				<div class="col col-heading">
+					<!-- Detailed info -->
+					<h2>Our Beautiful Story📚</h2><br>
+				</div>
+				<!-- First column end -->
+
+				<!-- Second column -->
+				<div class="col col-content">
+					<p>📅&nbsp;2023.10.25 - You asked me to change my remark in the "Mathematical Modeling Association" group, and we became QQ friends 🤝<br></p>
+					<p>📅&nbsp;2023.11.06 - You received the first pack of White Rabbit candy from me, and our sweet journey began 🍬<br></p>
+					<p>📅&nbsp;2023.11.17 - Our first walk together at night in the campus 🌃<br></p>
+					<p>📅&nbsp;2023.11.24 - Our first time holding hands 👫<br></p>
+					<p>📅&nbsp;2023.11.28 - I intentionally put my face near your lips, and you gave me our first soft kiss 💋<br></p>
+					<p>📅&nbsp;2023.11.29 - Our first deep kiss while watching a movie, which we barely watched because we were too busy kissing. Also, I got your hair tie as a souvenir 😘🎬<br></p>
+					<p>📅&nbsp;2023.12.02 - Our relationship was revealed on QQ when you accepted my invitation ❤️<br></p>
+					<p>📅&nbsp;2023.12.19 - I gave you a playful strawberry kiss 🍓😗<br></p>
+					<p>📅&nbsp;2023.12.24 - We made our relationship official and I gently touched your warm little tummy 📣🤗<br></p>
+					<p>📅&nbsp;2023.12.25 - Our first Christmas together 🎄🎁<br></p>
+					<p>📅&nbsp;2024.01.01 - We spent the whole New Year's Day together having fun and enjoying delicious cake 🍰🎉<br></p>
+					<p>📅&nbsp;2024.03.06 - We celebrated your birthday with a romantic night 🎂🎈<br></p>
+				</div>
+				<!-- Second column end -->
+
+			</div>
+		</div>
+		<!-- Detailed info block end -->
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="container" style="text-align: center;">
+				皖ICP备2023031200-1号
+			</div>
+		</div>
+		<!-- Footer end -->
+	</div>
+
+	<!-- JavaScripts -->
+
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/countdown.js"></script>
+	<script src="static/js/bezierCanvas.js"></script>
+	<script src="static/js/notifyMe.js"></script>
+
+	<script type="text/javascript">
+		$().ready(function () {
+
+			// Activate countdownTimer plugin on a '.countdown' element
+			$(".countdown").countdownTimer({
+				// Set the end date for the countdown
+				endTime: new Date("November 29, 2023 00:00:00 UTC+0800")
+			});
+
+			// Activate notifyMe plugin on a '#notifyMe' element	
+			$("#notifyMe").notifyMe();
+
+			// Activate bezierCanvas plugin on a #bg-canvas element
+			$("#bg-canvas").bezierCanvas({
+				maxStyles: 3,
+				maxLines: 80,
+				strokeWidth: 0.5,
+				lineSpacing: 0.07,
+				spacingVariation: 0.07,
+				colorBase: { r: 100, g: 120, b: 200 },
+				colorVariation: { r: 50, g: 50, b: 50 },
+				globalAlpha: 0.4,
+				globalSpeed: 200,
+			});
+		});
+	</script>
+
+</body>
+
+</html>
