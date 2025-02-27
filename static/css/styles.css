@@ -1012,7 +1012,7 @@ body.color-scheme-berry {
 .color-scheme-berry hr {
   border-color: rgba(255, 255, 255, 0.3);
 }
-.color-scheme-berry .countdown .time {
+.color-scheme-berry .countdown .time { 
   border-color: rgba(255, 255, 255, 0.1);
 }
 .color-scheme-berry .countdown .time:last-child {
