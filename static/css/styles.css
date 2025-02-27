@@ -163,6 +163,23 @@ body {
   background-color: #191e23;
   min-width: 320px;
 }
+
+#copy {
+  position: fixed;
+  bottom: 12px;
+  right: 56px;
+  /* transform: translateX(-50%); */
+  z-index: 10000;
+}
+
+  #copy p {
+  color: #bd1e59;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  }
+
+
 #bg-canvas {
   margin: 0;
   padding: 0;
@@ -1157,6 +1174,17 @@ body.color-scheme-wisteria {
 .color-scheme-wisteria .notify-by-email {
   background-color: #504263;
 }
+
+
+#copy {
+  position: fixed;
+  bottom: 30px;
+  right: unset;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .color-scheme-wisteria .notify-by-email form input {
   background-color: rgba(255, 255, 255, 0.8);
 }
